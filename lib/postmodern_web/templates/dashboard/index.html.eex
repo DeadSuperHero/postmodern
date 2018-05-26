@@ -1,1 +1,8 @@
-<h2 id="title">Dashboard</h2>
+<div id="sidebar" class="col-md-3">
+<%= render "_sidebar.html" %>
+</div>
+
+<div class="container">
+  <div class="story_body">
+  <%= render "_story.html" %>
+</div>

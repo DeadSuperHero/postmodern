@@ -4,6 +4,48 @@ body {
   margin-top: 0px !important;
 }
 
+#sidebar {
+  background: #ddd;
+  position: fixed;
+  left: 0px;
+  bottom:0;
+  top: 45px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+.story {
+  display: inline-block;
+  background: #e7e7e7;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #c8c8c8;
+  box-shadow: 1px 1px 0px #f8f8f8 inset;
+}
+
+.story_thumb {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #333;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.story_meta {
+  display: inline-block;
+}
+
+.story_title {
+  font-weight: 800;
+}
+.story_body {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
 h2#title {
   font-size: 35px;
 }
