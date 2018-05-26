@@ -1,5 +1,9 @@
 /* This file is for your main application css. */
 
+body {
+  margin-top: 0px !important;
+}
+
 h2#title {
   font-size: 35px;
 }
