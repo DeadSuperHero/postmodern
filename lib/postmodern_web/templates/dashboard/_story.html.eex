@@ -1,4 +1,4 @@
-<h2 id="title">Postmodern Blog Demo</h2>
+<h2 id="title">postModern, a writing platform for the Web</h2>
 <div class="author">
   <div class="author_avatar">
   </div>
@@ -7,17 +7,18 @@
 
 <div id="entry_body">
   <div class="entry_text">
-    <p>Many newcomers to the federated web may hear of a casual reference to the
-    fediverse, and may be curious about what that term means. A simple explanation
-    might be that it’s a portmanteau of “federation” and “universe”, but it’s
-    actually a little bit more complicated than that.</p>
-    <blockquote class="smallquote">This is what a quote looks like.</blockquote>
-    <p>Let’s dive into the nature of this beast, along with some of the history
-    that comes with it.</p>
-    <p>At present, there are two supernetworks in the federated social communication
-    space, and they run on different protocols. They are known as The Fediverse,
-    and The Federation.</p>
-    <blockquote class="big">Here's a big quote.</blockquote>
+    <p>Welcome to postModern, a federated writing platform for the Web. There are
+    a few things about this piece of software that set it apart from an ordinary
+  blog or Content Management System. We have a long way to go, but we have some neat ideas.</p>
+    <blockquote class="big">The distance between insanity and genius is measured only by success. -Bruce Feirstein</blockquote>
+    <p>postModern is powered by the Fediverse, and uses the ActivityPub protocol to send articles to other servers.
+    The goal is to provide support for embedded media from platforms like
+  PeerTube, Funkwhale, and MediaGoblin, and allow bloggers to subscribe to each
+other across the federated web. Here, have a video.</p>
+    <iframe width="100%" height="335" src="https://framatube.org/videos/embed/217eefeb-883d-45be-b7fc-a788ad8507d3" frameborder="0" allowfullscreen></iframe>
+    <p>You can follow other postModern users, but Mastodon and Pleroma people can get updates from you too.</p>
+    <blockquote class="smallquote">There's obviously a lot to do still,
+    but I'm feeling pretty optimistic.</blockquote>
     <p>While both supernetworks function in similar ways and even have similar aims,
     they each come from a different history of development, and by extension,
     a different stack. The overlapping series of networks can be referred to in
