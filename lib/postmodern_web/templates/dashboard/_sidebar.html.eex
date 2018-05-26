@@ -1,167 +1,189 @@
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
+  </div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
 
-<div class="story">
-  <div class="story_thumb">
+<div class="story active">
+  <div class="story_head">
+    <div class="story_thumb">
+    </div>
+    <div class="story_meta">
+      <div class="story_title">Postmodern Blog Demo</div>
+      <div class="story_author">Sean Tilley</div>
+    </div>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
-  </div>
-</div>
 
-<div class="story">
-  <div class="story_thumb">
+  <div class="story_description">
+    <p>Many newcomers to the federated web may hear of a casual reference to the fediverse, and may be curious about what that term means.</p>
   </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
-  </div>
-</div>
-
-<div class="story">
-  <div class="story_thumb">
-  </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
-  </div>
-</div>
-
-<div class="story">
-  <div class="story_thumb">
-  </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
-  </div>
-</div>
-
-
-<div class="story">
-  <div class="story_thumb">
-  </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
-  </div>
-</div>
-
-
-<div class="story">
-  <div class="story_thumb">
-  </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
-  </div>
-</div>
-
-
-<div class="story">
-  <div class="story_thumb">
-  </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
-  </div>
-</div>
-
-
-<div class="story">
-  <div class="story_thumb">
-  </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
-  </div>
-</div>
-
-
-<div class="story">
-  <div class="story_thumb">
-  </div>
-  <div class="story_meta">
-    <div class="story_title">Title of an Article</div>
-    <div class="story_author">Sean Tilley</div>
+  <div class="story_tags">
+      <div class="tag">Free Network</div>
+      <div class="tag">Federation</div>
   </div>
 </div>
