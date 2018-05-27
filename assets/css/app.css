@@ -4,14 +4,45 @@ body {
   margin-top: 0px !important;
 }
 
+.container {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+header {
+  position: relative;
+  left: 0;
+  top: 0;
+  float: right;
+  height: 46px;
+  width: 100%;
+  background: #fff;
+}
+
+.page {
+  display:grid;
+  grid-template-columns: 26vw auto;
+}
+
+.main {
+  grid-column-start: 2;
+}
+
 #sidebar {
   background: #ddd;
   position: fixed;
   left: 0px;
-  bottom:0;
-  top: 45px;
+  bottom: 0;
   padding: 0px;
   overflow-y: scroll;
+  width: 26vw;
+  height: 100%;
+}
+
+#story_view {
+  width: 50vw;
+  margin-top: 5em;
+  margin-left: 1em;
 }
 
 .story {
