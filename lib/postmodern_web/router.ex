@@ -1,6 +1,7 @@
 defmodule PostmodernWeb.Router do
   use PostmodernWeb, :router
 
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -18,6 +19,7 @@ defmodule PostmodernWeb.Router do
     get "/hello", HelloController, :index
     get "/dashboard", DashboardController, :index
     get "/", PageController, :index
+    resources "/articles", ArticleController
   end
 
   # Other scopes may use custom stacks.
