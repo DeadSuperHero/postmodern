@@ -4,9 +4,18 @@ body {
   margin-top: 0px !important;
 }
 
-.container {
-  width: 100% !important;
-  max-width: none !important;
+#form_wrap {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  float: none;
+}
+
+.container-fluid {
+  margin-top: 5em;
 }
 
 header {
@@ -135,6 +144,7 @@ h2#title {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  float: none;
 }
 
 blockquote.big {

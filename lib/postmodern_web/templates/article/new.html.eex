@@ -1,5 +1,10 @@
-<h2>New Article</h2>
 
-<%= render "form.html", Map.put(assigns, :action, article_path(@conn, :create)) %>
+<div class="container-fluid">
+  <div id="form_wrap" class="col-md-6">
+    <h2>New Article</h2>
 
-<span><%= link "Back", to: article_path(@conn, :index) %></span>
+    <%= render "form.html", Map.put(assigns, :action, article_path(@conn, :create)) %>
+
+    <span><%= link "Back", to: article_path(@conn, :index) %></span>
+  </div>
+</div>

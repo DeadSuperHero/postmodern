@@ -1,12 +1,11 @@
 
-<div class="container">
-      <div id="entry_body" class="story_body col-md-8">
+<div class="container-fluid">
+      <div id="entry_body" class="story_body col-md-6">
+        <span><%= link "Edit", to: article_path(@conn, :edit, @article) %></span>
+        <span><%= link "Back", to: article_path(@conn, :index) %></span>
         <div class="entry_text">
         <h2><%= @article.title %></h2>
         <%= @article.body %>
       </div>
     </div>
-
-  <span><%= link "Edit", to: article_path(@conn, :edit, @article) %></span>
-  <span><%= link "Back", to: article_path(@conn, :index) %></span>
 </div>
