@@ -147,6 +147,12 @@ h2#title {
   float: none;
 }
 
+#entry_body img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
 blockquote.big {
   font-size: 30px;
   font-style: italic;
