@@ -5,7 +5,7 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Body</th>
+      <th>Description</th>
       <th>Published</th>
 
       <th></th>
@@ -15,7 +15,7 @@
 <%= for article <- @articles do %>
     <tr>
       <td><%= link article.title, to: article_path(@conn, :show, article) %></td>
-      <td><%= article.body %></td>
+      <td><%= truncate(article.body, length: 200, ommission: "...") %></td>
       <td><%= article.published %></td>
 
       <td class="text-right">
