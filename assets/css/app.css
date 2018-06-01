@@ -153,6 +153,32 @@ h2#title {
   max-width: 100%;
 }
 
+input#article_title {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 20px;
+}
+
+textarea#article_body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 200px;
+  border: none;
+  box-shadow: none;
+}
+
 blockquote.big {
   font-size: 30px;
   font-style: italic;

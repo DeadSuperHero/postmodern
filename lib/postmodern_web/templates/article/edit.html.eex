@@ -1,7 +1,5 @@
 <div class="container-fluid">
   <div id="form_wrap" class="col-md-6">
-    <h2>Edit Article</h2>
-
     <%= render "form.html", Map.put(assigns, :action, article_path(@conn, :update, @article)) %>
 
     <span><%= link "Back", to: article_path(@conn, :index) %></span>
