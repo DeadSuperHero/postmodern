@@ -171,12 +171,11 @@ input#article_title {
 }
 
 textarea#article_body {
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
   min-height: 200px;
   border: none;
   box-shadow: none;
+  font-size: 18px;
+  resize: none;
 }
 
 blockquote.big {
