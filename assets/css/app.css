@@ -4,9 +4,18 @@ body {
   margin-top: 0px !important;
 }
 
-.container {
-  width: 100% !important;
-  max-width: none !important;
+#form_wrap {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  float: none;
+}
+
+.container-fluid {
+  margin-top: 5em;
 }
 
 header {
@@ -131,6 +140,42 @@ h2#title {
 #entry_body {
   border-top: 1px solid #ddd;
   padding-top: 10px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+#entry_body img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
+input#article_title {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 20px;
+}
+
+textarea#article_body {
+  min-height: 200px;
+  border: none;
+  box-shadow: none;
+  font-size: 18px;
+  resize: none;
 }
 
 blockquote.big {
