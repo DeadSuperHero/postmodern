@@ -37,7 +37,7 @@ config :postmodern, PostmodernWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/postmodern_web/views/.*(ex)$},
-      ~r{lib/postmodern_web/templates/.*(eex)$}
+      ~r{lib/postmodern_web/templates/.*(eex|md)$}
     ]
   ]
 
@@ -51,8 +51,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :postmodern, Postmodern.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "seantilley",
+  password: "73190machen",
   database: "postmodern_dev",
   hostname: "localhost",
   pool_size: 10

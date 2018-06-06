@@ -1,31 +1,18 @@
 <div class="container-fluid">
 <h2>Listing Articles</h2>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Published</th>
-
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
 <%= for article <- @articles do %>
-    <tr>
-      <td><%= link article.title, to: article_path(@conn, :show, article) %></td>
-      <td><%= truncate(article.body, length: 200, ommission: "...") %></td>
-      <td><%= article.published %></td>
-
-      <td class="text-right">
-        <span><%= link "Edit", to: article_path(@conn, :edit, article), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: article_path(@conn, :delete, article), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
-      </td>
-    </tr>
+    <div class="article_thumb col-md-3">
+      <div class="article_title">
+        <%= link article.title, to: article_path(@conn, :show, article) %>
+      </div>
+      <div class="article_inner">
+        <%= truncate(article.body, length: 200, ommission: "...") %>
+        <%= link "Edit", to: article_path(@conn, :edit, article), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: article_path(@conn, :delete, article), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </div>
+    </div>
 <% end %>
-  </tbody>
-</table>
 
 <span><%= link "New Article", to: article_path(@conn, :new) %></span>
 </div>

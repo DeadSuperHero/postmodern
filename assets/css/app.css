@@ -4,6 +4,25 @@ body {
   margin-top: 0px !important;
 }
 
+/* Article View */
+.article_thumb {
+  border: 1px solid #ddd;
+  padding: 0px !important;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.article_title {
+  font-size: 20px;
+  padding: 3px;
+  text-align: center;
+}
+
+.article_inner {
+  border-top: 1px solid #ddd;
+  padding: 5px;
+}
+
 #form_wrap {
   position: relative;
   margin-left: auto;
