@@ -1,5 +1,4 @@
 <div class="container-fluid">
-<h2>Listing Articles</h2>
 
 <%= for article <- @articles do %>
     <div class="article_thumb col-md-3">
@@ -7,7 +6,7 @@
         <%= link article.title, to: article_path(@conn, :show, article) %>
       </div>
       <div class="article_inner">
-        <%= truncate(article.body, length: 200, ommission: "...") %>
+        <%= article.description %>
         <%= link "Edit", to: article_path(@conn, :edit, article), class: "btn btn-default btn-xs" %>
         <%= link "Delete", to: article_path(@conn, :delete, article), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
       </div>
