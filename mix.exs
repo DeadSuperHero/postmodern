@@ -20,6 +20,7 @@ defmodule Postmodern.Mixfile do
   def application do
     [
       mod: {Postmodern.Application, []},
+      applications: [:comeonin],
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -42,7 +43,8 @@ defmodule Postmodern.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:phoenix_html_simplified_helpers, "~> 2.0.0"},
-      {:earmark, "~> 1.0.1"}
+      {:earmark, "~> 1.0.1"},
+      {:comeonin, "~> 4.0"}
     ]
   end
 

@@ -9,12 +9,23 @@ defmodule Postmodern.Accounts.User do
     field :username, :string
 
     timestamps()
+
+    # Virtual Fields
+    field :password, :string, virtual: true
+    field :password_confirmation, :string, virtual: true
   end
 
   @doc false
   def changeset(user, attrs) do
     user
-    |> cast(attrs, [:username, :email, :password_digest])
-    |> validate_required([:username, :email, :password_digest])
+    |> cast(attrs, [:username, :email, :password, :password_confirmation])
+    |> validate_required([:username, :email, :password_confirmation])
+    |> hash_password
   end
+
+  defp hash_password(changeset) do
+    changeset
+    |> put_change(:password_digest, "ABCDE")
+  end
+
 end
