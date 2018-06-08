@@ -14,12 +14,14 @@
   <body>
 
     <header class="header">
-      <nav role="navbar navbar-default navbar-fixed-top">
+      <nav role="navbar navbar-dark bg-dark navbar-fixed-top">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
         </ul>
       </nav>
-      <span class="logo"></span>
+      <span class="brand">
+        <%= link "postModern", to: article_path(@conn, :index), class: "h3" %>
+        </span>
     </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

@@ -21,14 +21,6 @@ body, form, ul, table {
 .header {
   border-bottom: 1px solid #e5e5e5;
 }
-.logo {
-  width: 221px;
-  height: 30px;
-  display: inline-block;
-  background-image: url("/images/phoenix.png");
-  background-size: contain;
-  margin-top: 10px;
-}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,

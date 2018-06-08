@@ -5,6 +5,8 @@ defmodule Postmodern.Article do
     field :title, :string
     field :body, :string
     field :published, :boolean, default: false
+    field :description, :string
+    field :date_published, :date
 
     timestamps()
   end
@@ -14,7 +16,7 @@ defmodule Postmodern.Article do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:title, :body, :published])
+    |> cast(params, [:title, :body, :description, :date_published, :published])
     |> validate_required([:title, :body, :published])
     |> strip_unsafe_body(params)
   end

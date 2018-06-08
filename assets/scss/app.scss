@@ -4,6 +4,7 @@
 @import 'article-thumb';
 @import 'stories';
 @import 'entries';
+@import 'phoenix';
 
 body {
   margin-top: 0px !important;
@@ -51,4 +52,11 @@ header {
   overflow-y: scroll;
   width: 26vw;
   height: 95%;
+}
+
+
+span.brand {
+  position: relative;
+  display: block;
+  margin: 10px;
 }
