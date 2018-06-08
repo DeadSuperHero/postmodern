@@ -1,0 +1,54 @@
+/* This file is for your main application css. */
+
+@import 'first-time';
+@import 'article-thumb';
+@import 'stories';
+@import 'entries';
+
+body {
+  margin-top: 0px !important;
+}
+
+#form_wrap {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  float: none;
+}
+
+.container-fluid {
+  margin-top: 5em;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  float: right;
+  height: 46px;
+  width: 100%;
+  background: #fff;
+}
+
+.page {
+  display:grid;
+  grid-template-columns: 26vw auto;
+}
+
+.main {
+  grid-column-start: 2;
+}
+
+#sidebar {
+  background: #ddd;
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  padding: 0px;
+  overflow-y: scroll;
+  width: 26vw;
+  height: 95%;
+}

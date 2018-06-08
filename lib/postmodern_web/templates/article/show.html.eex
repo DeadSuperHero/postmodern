@@ -5,6 +5,7 @@
         <span><%= link "Back", to: article_path(@conn, :index) %></span>
         <div class="entry_text">
         <h2><%= @article.title %></h2>
+        <%= @article.date_published %>
         <%= markdown(@article.body) %>
       </div>
     </div>

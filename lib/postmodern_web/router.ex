@@ -17,6 +17,7 @@ defmodule PostmodernWeb.Router do
   scope "/", PostmodernWeb do
     pipe_through :browser # Use the default browser stack
     get "/dashboard", DashboardController, :index
+    get "/first_time", FirstTimeController, :index
     get "/", PageController, :index
     resources "/articles", ArticleController
   end

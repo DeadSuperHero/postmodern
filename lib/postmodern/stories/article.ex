@@ -8,6 +8,7 @@ defmodule Postmodern.Stories.Article do
     field :published, :boolean, default: false
     field :title, :string
     field :description, :string
+    field :date_published, :date
 
     timestamps()
   end
@@ -15,7 +16,7 @@ defmodule Postmodern.Stories.Article do
   @doc false
   def changeset(article, attrs) do
     article
-    |> cast(attrs, [:title, :body, :description, :published])
+    |> cast(attrs, [:title, :body, :description, :date_published, :published])
     |> validate_required([:title, :body, :description, :published])
   end
 end

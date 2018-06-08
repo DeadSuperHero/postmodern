@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <div id="first_welcome" class="col-md-8">
+  <div class="jumbotron">
+    <h2>Welcome to postModern!</h2>
+    <p>postModern is a new kind of writing platform that lets people follow you
+    and comment on your articles from all over the web. </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <h4>Federated Publishing</h4>
+      <p>postModern is powered by the ActivityPub protocol, a new communication
+        standard that lets people interact seamlessly from different spaces
+      on the web.</p>
+    </div>
+
+    <div class="col-md-3">
+      <h4>Remote Subscriptions</h4>
+      <p>From the ground up, postModern is intended to not only serve as a
+      publishing platform, but also serves as a dedicated feed reader. </p>
+    </div>
+
+    <div class="col-md-3">
+      <h4>Public View</h4>
+      <p>Everything you write can also be read without an account; meaning that
+      your site can also work just like any other article site out there.</p>
+    </div>
+
+    <div class="col-md-3">
+      <h4>Free Software</h4>
+      <p>postModern is licensed under the GNU AGPL v3, and all of the source
+      code is readily available for you to examine, modify, and redistribute.</p>
+    </div>
+  </div>
+
+<div class="row">
+  <h2>First Time Setup</h2>
+  <p>If you are seeing this page, that means that you've successfully gotten the
+    server up and running, but don't have any admin users created yet. Go ahead
+  and run <code>randomcodehere</code> to generate a user and assign admin
+  permissions to them, and this page will disappear!</p>
+</div>
+
+</div>
