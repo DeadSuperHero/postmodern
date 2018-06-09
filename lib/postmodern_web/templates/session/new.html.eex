@@ -1,6 +1,7 @@
 <h1>Sign In</h1>
 <%= form_for @conn, session_path(@conn, :new), [as: :session], fn f -> %>
   <%= text_input f, :username, placeholder: "username" %>
-  <%= password_input f, :password, placeholder: "password" %>
+  <%= password_input f, :encrypted_password, placeholder: "password" %>
+  <%= error_tag f, :encrypted_password %>
   <%= submit "Sign In" %>
 <% end %>
