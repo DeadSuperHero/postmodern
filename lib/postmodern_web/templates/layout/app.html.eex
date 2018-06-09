@@ -15,8 +15,8 @@
 
     <header class="header">
       <nav role="navbar navbar-dark bg-dark navbar-fixed-top">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+        <ul id="user_menu" class="nav nav-pills pull-right">
+          <%= link "New Article", to: article_path(@conn, :new), class: "btn btn-default" %>
         </ul>
       </nav>
       <span class="brand">

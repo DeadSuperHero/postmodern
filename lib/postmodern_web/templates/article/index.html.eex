@@ -13,6 +13,4 @@
       </div>
     </div>
 <% end %>
-
-<span><%= link "New Article", to: article_path(@conn, :new) %></span>
 </div>

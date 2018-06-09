@@ -20,6 +20,10 @@ body {
   float: none;
 }
 
+#user_menu{
+  margin: 5px;
+}
+
 .container-fluid {
   margin-top: 5em;
 }
@@ -57,6 +61,6 @@ header {
 
 span.brand {
   position: relative;
-  display: block;
+  display: inline-block;
   margin: 10px;
 }
