@@ -1,7 +1,5 @@
 defmodule PostmodernWeb.SessionController do
-
   use PostmodernWeb, :controller
-
   alias Postmodern.Accounts
 
   def new(conn, _params) do
@@ -29,5 +27,4 @@ defmodule PostmodernWeb.SessionController do
     |> put_flash(:info, "Signed out successfully")
     |> redirect(to: article_path(conn, :index))
   end
-
 end

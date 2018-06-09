@@ -1,7 +1,11 @@
-<h1>Sign In</h1>
-<%= form_for @conn, session_path(@conn, :new), [as: :session], fn f -> %>
-  <%= text_input f, :username, placeholder: "username" %>
-  <%= password_input f, :encrypted_password, placeholder: "password" %>
-  <%= error_tag f, :encrypted_password %>
-  <%= submit "Sign In" %>
-<% end %>
+<div class="container-fluid">
+  <div id="form_wrap" class="col-md-6">
+  <h1>Sign In</h1>
+  <%= form_for @conn, session_path(@conn, :new), [as: :session], fn f -> %>
+    <%= text_input f, :username, placeholder: "username" %>
+    <%= password_input f, :encrypted_password, placeholder: "password" %>
+    <%= error_tag f, :encrypted_password %>
+    <%= submit "Sign In", class: "btn btn-success" %>
+  <% end %>
+  </div>
+</div>
