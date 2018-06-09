@@ -15,6 +15,14 @@
 
     <header class="header">
       <nav role="navbar navbar-dark bg-dark navbar-fixed-top">
+
+        <%= if signed_in?(@conn) do %>
+        <%= link "Sign Out", to: session_path(@conn, :delete), method: :delete %>
+        <% else %>
+        <%= link "Sign In", to: session_path(@conn, :new) %>
+        <%= link "Sign Up", to: user_path(@conn, :new) %>
+        <% end %>
+
         <ul id="user_menu" class="nav nav-pills pull-right">
           <%= link "New Article", to: article_path(@conn, :new), class: "btn btn-default" %>
         </ul>

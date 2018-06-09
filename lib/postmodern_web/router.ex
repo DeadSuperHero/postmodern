@@ -20,7 +20,11 @@ defmodule PostmodernWeb.Router do
     get "/first_time", FirstTimeController, :index
     get "/", PageController, :index
     resources "/articles", ArticleController
-    resources "/users", UserController
+    resources "/registrations", UserController, only: [:new, :create, :index, :show, :edit]
+
+    get "/sign-in", SessionController, :new
+    post "/sign-in", SessionController, :create
+    get "/sign-out", SessionController, :delete
   end
 
   # Other scopes may use custom stacks.

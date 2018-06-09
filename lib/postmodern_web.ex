@@ -41,6 +41,7 @@ defmodule PostmodernWeb do
       import PostmodernWeb.Router.Helpers
       import PostmodernWeb.ErrorHelpers
       import PostmodernWeb.Gettext
+      import PostmodernWeb.Helpers.Auth, only: [signed_in?: 1]
     end
   end
 

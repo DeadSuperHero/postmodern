@@ -8,6 +8,14 @@ defmodule Postmodern.Accounts do
 
   alias Postmodern.Accounts.User
 
+  def get_by_username(username) when is_nil(username) do
+    nil
+  end
+
+  def get_by_username(username) do
+    Repo.get_by(User, username: username)
+  end
+
   @doc """
   Returns the list of users.
 
