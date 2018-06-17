@@ -6,6 +6,22 @@
   margin-left: 1em;
 }
 
+#articles {
+  margin-top: 3em;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+}
+
+.articles_inner {
+  border: 1px solid #ddd;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #fff;
+}
+
 .story {
   display: inline-block;
   background: #e7e7e7;

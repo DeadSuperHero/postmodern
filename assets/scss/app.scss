@@ -8,6 +8,7 @@
 
 body {
   margin-top: 0px !important;
+  background: #f2f2f2 !important;
 }
 
 #form_wrap {
@@ -36,6 +37,7 @@ header {
   height: 46px;
   width: 100%;
   background: #fff;
+  z-index: 9000;
 }
 
 .page {
@@ -58,9 +60,16 @@ header {
   height: 95%;
 }
 
-
 span.brand {
   position: relative;
   display: inline-block;
   margin: 10px;
+  text-shadow: 1px 1px 0px #fff;
 }
+
+.grid-item {
+  width: 370px;
+  display: inline-grid;
+  height: 270px;
+ }
+.grid-item--width2 { width: 400px; }
