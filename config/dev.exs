@@ -51,8 +51,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :postmodern, Postmodern.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "seantilley",
-  password: "73190machen",
+  username: "postgres",
+  password: "password",
   database: "postmodern_dev",
   hostname: "localhost",
   pool_size: 10

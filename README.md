@@ -19,3 +19,11 @@ To start your Phoenix server:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+
+# Sentry Support
+postModern can make use of [Sentry](https://sentry.io) to monitor the application and catch errors in production. The feature is purely opt-in for anyone running
+a postModern instance.
+
+To enable it, just go to your `config/prod.exs` file
+and insert your `DSN Key` from Sentry. The DSN key can be found within the
+__Project Settings__ area of any Sentry project.

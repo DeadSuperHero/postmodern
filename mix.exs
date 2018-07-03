@@ -20,7 +20,7 @@ defmodule Postmodern.Mixfile do
   def application do
     [
       mod: {Postmodern.Application, []},
-      extra_applications: [:logger, :runtime_tools, :comeonin]
+      extra_applications: [:sentry, :logger, :runtime_tools, :comeonin]
     ]
   end
 
@@ -33,7 +33,8 @@ defmodule Postmodern.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.3.2"},
+      {:sentry, "~> 6.3"},
+      {:phoenix, "~> 1.3.3"},
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
