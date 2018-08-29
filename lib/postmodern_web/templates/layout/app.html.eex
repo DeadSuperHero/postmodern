@@ -13,27 +13,15 @@
 
   <body>
 
-    <header class="header">
-      <nav role="navbar navbar-dark bg-dark navbar-fixed-top">
+    <%= render "_navbar.html", conn: @conn %>
 
-        <%= if signed_in?(@conn) do %>
-        <%= link "Sign Out", to: session_path(@conn, :delete), method: :delete %>
-        <% else %>
-        <%= link "Sign In", to: session_path(@conn, :new) %>
-        <%= link "Sign Up", to: user_path(@conn, :new) %>
-        <% end %>
-
-        <ul id="user_menu" class="nav nav-pills pull-right">
-          <%= link "New Article", to: article_path(@conn, :new), class: "btn btn-default" %>
-        </ul>
-      </nav>
-      <span class="brand">
-        <%= link "postModern", to: article_path(@conn, :index), class: "h3" %>
-        </span>
-    </header>
-
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+    <%= unless is_nil(get_flash(@conn, :info)) do %>
+      <p class="alert alert-success" role="alert"><%= get_flash(@conn, :info) %></p>
+    <% end %>
+    <%= unless is_nil(get_flash(@conn, :error)) do %>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    <% end %>
+
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
