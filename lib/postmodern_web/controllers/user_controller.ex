@@ -27,19 +27,18 @@ defmodule PostmodernWeb.UserController do
     end
   end
 
-   def show(conn, %{"username" => username}) do
-       user = Accounts.get_user!(username)
-                |> Repo.preload([:channel])
+   def show(conn, %{"username" => id}) do
+       user = Accounts.get_user!(id)
        render(conn, "show.html", user: user)
      end
 
-     def edit(conn, %{"id" => id}) do
+     def edit(conn, %{"username" => id}) do
        user = Accounts.get_user!(id)
        changeset = Accounts.change_user(user)
        render(conn, "edit.html", user: user, changeset: changeset)
      end
 
-  def update(conn, %{"id" => id, "user" => user_params}) do
+  def update(conn, %{"username" => id, "user" => user_params}) do
     user = Accounts.get_user!(id)
     case Accounts.update_user(user, user_params) do
       {:ok, user} ->
@@ -51,7 +50,7 @@ defmodule PostmodernWeb.UserController do
     end
   end
 
-  def delete(conn, %{"id" => id}) do
+  def delete(conn, %{"username" => id}) do
     user = Accounts.get_user!(id)
     {:ok, _user} = Accounts.delete_user(user)
     conn

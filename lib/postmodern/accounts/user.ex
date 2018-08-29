@@ -3,6 +3,7 @@ defmodule Postmodern.Accounts.User do
   import Ecto.Changeset
   alias Postmodern.Accounts.User
   alias Comeonin.Bcrypt
+  @derive {Phoenix.Param, key: :username}
 
   defimpl Phoenix.Param, for: Postmodern.Accounts.User do
   def to_param(%{username: username}) do
