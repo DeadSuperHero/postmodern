@@ -17,6 +17,11 @@ config :postmodern, PostmodernWeb.Endpoint,
   pubsub: [name: Postmodern.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
+# Configures Guaridan, which is used for auth
+config :postmodern, Postmodern.Guardian,
+       issuer: "Postmodern",
+       secret_key: "uC1+kp5yCWK82YnFhRK3W6+KtQjc4JuYqWSGaSMBct4OVlAAM7/+9AGpsvT+hFVz"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

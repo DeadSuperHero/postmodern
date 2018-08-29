@@ -3,7 +3,11 @@
 
     <div class="dropdown float-right">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      User Menu
+      <%= if signed_in?(@conn) do %>
+      Signed In
+      <% else %>
+      Get Started
+      <% end %>
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <%= link "New Article", to: article_path(@conn, :new), class: "a" %>

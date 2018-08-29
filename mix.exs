@@ -44,7 +44,8 @@ defmodule Postmodern.Mixfile do
       {:phoenix_html_simplified_helpers, "~> 2.0.0"},
       {:earmark, "~> 1.0.1"},
       {:comeonin, "~> 4.0"},
-      {:bcrypt_elixir, "~> 1.0"}
+      {:bcrypt_elixir, "~> 1.0"},
+      {:guardian, "~> 1.0"}
     ]
   end
 

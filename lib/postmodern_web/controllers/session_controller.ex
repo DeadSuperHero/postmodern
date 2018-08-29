@@ -1,5 +1,6 @@
 defmodule PostmodernWeb.SessionController do
   use PostmodernWeb, :controller
+  import Comeonin.Bcrypt, only: [checkpw: 2, dummy_checkpw: 0]
   alias Postmodern.Accounts
 
   def new(conn, _params) do
@@ -19,6 +20,11 @@ defmodule PostmodernWeb.SessionController do
         |> put_flash(:error, "There was a problem with your username/password")
         |> render("new.html")
     end
+  end
+
+  defp login(conn, user) do
+    conn
+    |> Guardian.Plug.sign_in(user)
   end
 
   def delete(conn, _params) do
