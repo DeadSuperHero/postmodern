@@ -1,10 +1,18 @@
 
 <div class="container-fluid">
-      <div id="entry_body" class="story_body col-md-6">
-        <span><%= link "Edit", to: article_path(@conn, :edit, @article) %></span>
-        <span><%= link "Back", to: article_path(@conn, :index) %></span>
-        <div class="entry_text">
-        <h2><%= @article.title %></h2>
+      <div id="entry" class="story_body col-md-6">
+
+        <div id="entry_heading">
+
+          <span><%= link "Edit", to: article_path(@conn, :edit, @article) %></span>
+          <span><%= link "Back", to: article_path(@conn, :index) %></span>
+
+        <h2 class="title">
+          <%= @article.title %>
+        </h2>
+
+      </div>
+        <div id="entry_body">
         <%= @article.date_published %>
         <%= markdown(@article.body) %>
       </div>

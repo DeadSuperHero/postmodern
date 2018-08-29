@@ -20,7 +20,7 @@ defmodule PostmodernWeb.Router do
     get "/first_time", FirstTimeController, :index
     get "/", PageController, :index
     resources "/articles", ArticleController
-    resources "/registrations", UserController, only: [:new, :create, :index, :show, :edit]
+    resources "/users", UserController, param: "username"
 
     get "/sign-in", SessionController, :new
     post "/sign-in", SessionController, :create

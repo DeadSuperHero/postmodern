@@ -1,12 +1,24 @@
 /* Entries - Assets pertaining to public-facing views and the editor itself */
 
-h2#title {
+h2.title {
   font-size: 35px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+#entry_heading {
+  padding: 0;
+}
+
+#entry {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
 
 #entry_body {
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
+  padding: 15px;
   display: block;
   position: relative;
   margin-left: auto;
@@ -20,7 +32,11 @@ h2#title {
   max-width: 100%;
 }
 
-input#article_title {
+h2.title {
+  min-height: 45px;
+}
+
+textarea#article_title {
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -35,6 +51,7 @@ input#article_title {
   border-left: none;
   border-right: none;
   padding-bottom: 20px;
+  min-height: 45px;
 }
 
 textarea#article_body {
@@ -42,7 +59,7 @@ textarea#article_body {
   border: none;
   box-shadow: none;
   font-size: 18px;
-  resize: none;
+  resize: vertical;
 }
 
 blockquote.big {

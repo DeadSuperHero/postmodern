@@ -1,23 +1,11 @@
-<h2>Show User</h2>
 
-<ul>
-
-  <li>
-    <strong>Username:</strong>
-    <%= @user.username %>
-  </li>
-
-  <li>
-    <strong>Email:</strong>
-    <%= @user.email %>
-  </li>
-
-  <li>
-    <strong>Password digest:</strong>
-    <%= @user.password_digest %>
-  </li>
-
-</ul>
+<div class="container-fluid">
+  <div id="entry" class="story_body col-md-6">
+    <h2><%= @user.display_name %></h2>
+    <p><%= @user.description %></p>
 
 <span><%= link "Edit", to: user_path(@conn, :edit, @user) %></span>
 <span><%= link "Back", to: user_path(@conn, :index) %></span>
+
+  </div>
+</div>

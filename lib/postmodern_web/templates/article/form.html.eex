@@ -6,7 +6,7 @@
   <% end %>
 
   <div class="form-group">
-    <%= text_input f, :title, class: "form-control", placeholder: "New Article" %>
+    <%= textarea f, :title, class: "form-control", placeholder: "New Article" %>
     <%= error_tag f, :title %>
   </div>
 

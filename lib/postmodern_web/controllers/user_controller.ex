@@ -9,6 +9,7 @@ defmodule PostmodernWeb.UserController do
     render(conn, "index.html", users: users)
   end
 
+
   def new(conn, _params) do
     changeset = Accounts.change_user(%User{})
     render(conn, "new.html", changeset: changeset)
@@ -26,8 +27,9 @@ defmodule PostmodernWeb.UserController do
     end
   end
 
-   def show(conn, %{"id" => id}) do
-       user = Accounts.get_user!(id)
+   def show(conn, %{"username" => username}) do
+       user = Accounts.get_user!(username)
+                |> Repo.preload([:channel])
        render(conn, "show.html", user: user)
      end
 
