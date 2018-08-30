@@ -12,6 +12,11 @@
 // If you no longer want to use a dependency, remember
 // to also remove its path from "config.paths.watched".
 import "phoenix_html"
+import $ from "jquery"
+import "jquery"
+import "bootstrap"
+import "bootstrap-select"
+import "popper.js"
 
 // Import local files
 //

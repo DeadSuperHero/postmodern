@@ -26,9 +26,10 @@ defmodule PostmodernWeb.Router do
 
     get "/", PageController, :index
     resources "/users", UserController
-    get "/login", SessionController, :index
-    post "/login", SessionController, :login
-    post "/logout", SessionController, :logout
+    get "/sign_up", UserController, :new
+    get "/sign_in", SessionController, :index
+    post "/sign_in", SessionController, :login
+    post "/sign_out", SessionController, :logout
     resources "/articles", ArticleController
   end
 

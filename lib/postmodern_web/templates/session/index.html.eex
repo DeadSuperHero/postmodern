@@ -1,3 +1,4 @@
+<div class="user_form col-md-3">
 <h2> Login page </h2>
 
 <%= if @maybe_user == nil do %>
@@ -19,7 +20,12 @@
   <%= submit "Submit", class: "btn btn-primary" %>
 </div>
 
+<small>Don't have an account yet? <%= link "Sign Up", to: user_path(@conn, :new) %></small>
+
 <% end %>
+
+<% else %>
 
 
 <% end %>
+</div>

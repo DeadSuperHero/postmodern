@@ -1,0 +1,25 @@
+<header class="header">
+  <nav role="navbar navbar-dark bg-dark navbar-fixed-top">
+
+    <div class="dropdown float-right">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      User Menu
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+      <%= link "New Article", to: article_path(@conn, :new), class: "a" %>
+      <%= link "Logout", to: session_path(@conn, :logout), method:
+      :post%>
+
+      <%= link "Sign In", to: session_path(@conn, :index), class: "a" %>
+      <%= link "Sign Up", to: user_path(@conn, :new), class: "a"  %>
+
+    </div>
+  </div>
+
+
+  </nav>
+  <span class="brand">
+    <%= link "postModern", to: article_path(@conn, :index), class: "h3" %>
+    </span>
+</header>
