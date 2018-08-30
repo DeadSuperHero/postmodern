@@ -17,7 +17,6 @@
       <td><%= user.display_name %></td>
       <td><%= user.username %></td>
       <td><%= user.email %></td>
-      <td><%= user.password %></td>
 
       <td class="text-right">
         <span><%= link "Show", to: user_path(@conn, :show, user), class: "btn btn-default btn-xs" %></span>

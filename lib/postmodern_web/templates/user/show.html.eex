@@ -2,5 +2,7 @@
   <%= @user.display_name %>
 </h2>
 
+<%= @user.description %>
+
 <span><%= link "Edit", to: user_path(@conn, :edit, @user) %></span>
 <span><%= link "Back", to: user_path(@conn, :index) %></span>

@@ -10,6 +10,7 @@ defmodule Postmodern.Auth.User do
     field :email, :string
     field :password, :string
     field :username, :string
+    field :description, :string
 
     timestamps()
   end
@@ -17,7 +18,7 @@ defmodule Postmodern.Auth.User do
   @doc false
   def changeset(user, attrs) do
     user
-    |> cast(attrs, [:display_name, :username, :email, :password])
+    |> cast(attrs, [:display_name, :username, :email, :password, :description])
     |> validate_required([:display_name, :username, :email, :password])
     |> put_pass_hash()
   end
