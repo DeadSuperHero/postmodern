@@ -15,7 +15,6 @@ defmodule PostmodernWeb.SessionController do
     end
 
     conn
-    |> put_flash(:info, message)
     |> render("index.html", changeset: changeset, action: session_path(conn, :login), maybe_user: maybe_user)
   end
 

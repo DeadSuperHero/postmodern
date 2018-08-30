@@ -1,6 +1,20 @@
 /* This file is for your main application css. */
-
+@import "articles";
 @import "bootstrap";
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+.btn-dropdown {
+  height: 46px;
+  border-radius: 0px;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  background: #fff;
+}
 
 body {
   margin-top: 0px !important;

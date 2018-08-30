@@ -2,19 +2,20 @@
   <nav role="navbar navbar-dark bg-dark navbar-fixed-top">
 
     <div class="dropdown float-right">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       User Menu
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
 
-      <%= link "New Article", to: article_path(@conn, :new), class: "a" %>
-      <%= link "Logout", to: session_path(@conn, :logout), method:
-      :post%>
+      <li><%= link "New Article", to: article_path(@conn, :new) %></li>
+      <li class="divider"></li>
+      <li><%= link "Logout", to: session_path(@conn, :logout), method:
+      :post%></li>
 
-      <%= link "Sign In", to: session_path(@conn, :index), class: "a" %>
-      <%= link "Sign Up", to: user_path(@conn, :new), class: "a"  %>
+      <li><%= link "Sign In", to: session_path(@conn, :index) %></li>
+      <li><%= link "Sign Up", to: user_path(@conn, :new)  %></li>
 
-    </div>
+    </ul>
   </div>
 
 

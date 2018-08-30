@@ -26,6 +26,9 @@
 
 <% else %>
 
+<h4>Hey, you're already logged in!</h4>
+<span><%= link "Logout", to: session_path(@conn, :logout), method:
+:post, class: "btn btn-danger"%></span>
 
 <% end %>
 </div>
