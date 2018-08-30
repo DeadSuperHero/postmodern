@@ -29,7 +29,7 @@ defmodule PostmodernWeb.Router do
     get "/login", SessionController, :index
     post "/login", SessionController, :login
     post "/logout", SessionController, :logout
-    get "/articles", SessionController, :secret
+    resources "/articles", ArticleController
   end
 
   # Definitely logged in scope
