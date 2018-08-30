@@ -1,0 +1,42 @@
+#search {
+  padding: 0;
+  display: inline-block;
+}
+
+#search input.form-control {
+  border-radius: 0;
+  height: 46px;
+}
+
+span.brand {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  margin-left: 5px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  float: right;
+  width: 100%;
+  background: #606060;
+}
+
+span.brand a {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+button#dropdownMenuButton {
+  background: #fff;
+  color: #777;
+  border: none;
+  box-shadow: 0px 0px 4px #6b6767;
+  padding: 7px;
+  height: 35px;
+  margin-top: 4px;
+  border-radius: 3px;
+  margin-right: 10px;
+}

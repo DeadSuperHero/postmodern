@@ -1,0 +1,33 @@
+<header class="header">
+  <nav role="navbar navbar-inverse bg-inverse navbar-fixed-top">
+
+<div id="search" class="col-md-2">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="@Search" aria-describedby="sizing-addon2 place">
+  </div>
+</div>
+
+<span class="brand">
+  <%= link "postModern", to: article_path(@conn, :index), class: "h3" %>
+</span>
+
+    <div class="dropdown float-right">
+    <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      User Menu
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+
+      <li class="dropdown"><%= link "New Article", to: article_path(@conn, :new), class: "dropdown-item" %></li>
+      <li class="divider"></li>
+      <li class="dropdown"><%= link "Logout", to: session_path(@conn, :logout), method:
+      :post,  class: "dropdown-item"  %></li>
+
+    <li class="dropdown"><%= link "Sign In", to: session_path(@conn, :index), class: "dropdown-item"  %></li>
+      <li class="dropdown"><%= link "Sign Up", to: user_path(@conn, :new), class: "dropdown-item"  %></li>
+
+    </ul>
+  </div>
+
+
+  </nav>
+</header>

@@ -15,7 +15,6 @@ defmodule PostmodernWeb.SessionController do
     end
 
     conn
-    |> put_flash(:info, message)
     |> render("index.html", changeset: changeset, action: session_path(conn, :login), maybe_user: maybe_user)
   end
 
@@ -26,6 +25,7 @@ defmodule PostmodernWeb.SessionController do
 
   defp login_reply({:error, error}, conn) do
     conn
+    |> put_session(:current_user, nil)
     |> put_flash(:error, error)
     |> redirect(to: "/")
   end
@@ -34,6 +34,7 @@ defmodule PostmodernWeb.SessionController do
     conn
     |> put_flash(:success, "Welcome back!")
     |> Guardian.Plug.sign_in(user)
+    |> put_session(:current_user, %{id: user.id, username: user.username})
     |> redirect(to: "/articles")
   end
 

@@ -1,0 +1,69 @@
+/* This file is for your main application css. */
+@import "articles";
+@import "navbar";
+@import "bootstrap";
+
+
+#region-left {
+
+}
+
+#region_body {
+  margin: auto;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+.btn-dropdown {
+  height: 46px;
+  border-radius: 0px;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  background: #fff;
+}
+
+body {
+  margin-top: 0px !important;
+}
+
+.user_form {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  float: none;
+}
+
+#user_menu{
+  margin: 5px;
+}
+
+.container-fluid {
+  margin-top: 5em;
+}
+
+.page {
+  display:grid;
+  grid-template-columns: 26vw auto;
+}
+
+.main {
+  grid-column-start: 2;
+}
+
+#sidebar {
+  background: #ddd;
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  padding: 0px;
+  overflow-y: scroll;
+  width: 26vw;
+  height: 95%;
+}

@@ -1,0 +1,19 @@
+#article_index {
+  margin: auto;
+}
+
+.article_outer {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
+
+.article_inner {
+  display: inline-block;
+  max-width: 80%;
+}
+
+.actions {
+  display: inline-block;
+  vertical-align: top;
+}

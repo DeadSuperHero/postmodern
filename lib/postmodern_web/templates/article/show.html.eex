@@ -1,0 +1,10 @@
+<div id="article_outer", class="col-md-6">
+<h2> <%= @article.title %> </h2>
+
+<%= @article.body %>
+
+  <div class="actions">
+    <span><%= link "Edit", to: article_path(@conn, :edit, @article) %></span>
+    <span><%= link "Back", to: article_path(@conn, :index) %></span>
+  </div>
+</div>
