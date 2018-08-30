@@ -17,6 +17,7 @@ import "jquery"
 import "bootstrap"
 import "bootstrap-select"
 import "popper.js"
+import "tinymce"
 
 // Import local files
 //
