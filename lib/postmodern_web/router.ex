@@ -26,16 +26,17 @@ defmodule PostmodernWeb.Router do
 
     get "/", PageController, :index
     resources "/users", UserController
-    resources "/articles", ArticleController
-    post "/", PageController, :login
-    post "/logout", PageController, :logout
+    get "/login", SessionController, :index
+    post "/login", SessionController, :login
+    post "/logout", SessionController, :logout
+    get "/articles", SessionController, :secret
   end
 
   # Definitely logged in scope
   scope "/", PostmodernWeb do
     pipe_through [:browser, :auth, :ensure_auth]
 
-    get "/secret", PageController, :secret
+    get "/secret", SessionController, :secret
   end
 
   # Other scopes may use custom stacks.

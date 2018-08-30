@@ -1,0 +1,5 @@
+{
+  "API_BASE_URL": "https://example.com",
+  "CLIENT_ID": "DEFINE_ME",
+  "CLIENT_SECRET": "DEFINE_ME"
+}
