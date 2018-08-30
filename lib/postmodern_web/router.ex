@@ -26,6 +26,7 @@ defmodule PostmodernWeb.Router do
 
     get "/", PageController, :index
     resources "/users", UserController
+    resources "/articles", ArticleController
     post "/", PageController, :login
     post "/logout", PageController, :logout
   end

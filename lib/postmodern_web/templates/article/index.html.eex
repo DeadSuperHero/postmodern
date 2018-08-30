@@ -1,0 +1,28 @@
+<h2>Listing Articles</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for article <- @articles do %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.body %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: article_path(@conn, :show, article), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: article_path(@conn, :edit, article), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: article_path(@conn, :delete, article), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Article", to: article_path(@conn, :new) %></span>

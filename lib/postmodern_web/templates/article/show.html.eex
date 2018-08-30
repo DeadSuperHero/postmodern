@@ -1,0 +1,7 @@
+<h2> <%= @article.title %> </h2>
+
+<%= @article.body %>
+
+
+<span><%= link "Edit", to: article_path(@conn, :edit, @article) %></span>
+<span><%= link "Back", to: article_path(@conn, :index) %></span>
