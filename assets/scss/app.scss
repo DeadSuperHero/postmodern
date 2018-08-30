@@ -1,5 +1,6 @@
 /* This file is for your main application css. */
 @import "articles";
+@import "navbar";
 @import "bootstrap";
 
 header {
@@ -38,16 +39,6 @@ body {
   margin-top: 5em;
 }
 
-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  float: right;
-  height: 46px;
-  width: 100%;
-  background: #fff;
-}
-
 .page {
   display:grid;
   grid-template-columns: 26vw auto;
@@ -66,11 +57,4 @@ header {
   overflow-y: scroll;
   width: 26vw;
   height: 95%;
-}
-
-
-span.brand {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
 }
