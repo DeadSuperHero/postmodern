@@ -20,7 +20,7 @@
   <%= submit "Submit", class: "btn btn-primary" %>
 </div>
 
-<small>Don't have an account yet? <%= link "Sign Up", to: user_path(@conn, :new) %></small>
+<small>Don't have an account yet? <%= link "Sign Up", to: "/sign_up" %></small>
 
 <% end %>
 
