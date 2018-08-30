@@ -8,6 +8,7 @@ defmodule Postmodern.Accounts.Profile do
     field :description, :string
     field :display_name, :string
     field :username, :string
+    belongs_to :users, Postmodern.Auth.User
 
     timestamps()
   end

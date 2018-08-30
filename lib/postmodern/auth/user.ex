@@ -11,6 +11,7 @@ defmodule Postmodern.Auth.User do
     field :password, :string
     field :username, :string
     field :description, :string
+    has_one :profile, Postmodern.Accounts.Profile
 
     timestamps()
   end
