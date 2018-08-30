@@ -1,29 +1,18 @@
-<div id="article_outer", class="col-md-6">
-<h2>Listing Articles</h2>
+<div id="article_index" class="col-md-8">
+  <h2>Listing Articles</h2>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
+  <%= for article <- @articles do %>
+    <div class="article_outer">
+      <div class="article_inner">
+          <%= link article.title, to: article_path(@conn, :show, article), class: "h5" %>
+          <p><%= article.body %></p>
+      </div>
 
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-<%= for article <- @articles do %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.body %></td>
+      <div class="actions">
+              <%= link "Edit", to: article_path(@conn, :edit, article), class: "btn btn-default btn-xs" %>
+              <%= link "Delete", to: article_path(@conn, :delete, article), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </div>
 
-      <td class="text-right">
-        <span><%= link "Show", to: article_path(@conn, :show, article), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Edit", to: article_path(@conn, :edit, article), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: article_path(@conn, :delete, article), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
-      </td>
-    </tr>
-<% end %>
-  </tbody>
-</table>
-
+    </div>
+  <% end %>
 </div>

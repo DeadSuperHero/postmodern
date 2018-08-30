@@ -6,33 +6,28 @@
   <% end %>
 
   <div class="form-group">
-    <%= label f, :display_name, class: "control-label" %>
-    <%= text_input f, :display_name, class: "form-control" %>
-    <%= error_tag f, :display_name %>
-  </div>
-
-  <div class="form-group">
-    <%= label f, :description, class: "control-label" %>
-    <%= textarea f, :description, class: "form-control" %>
-    <%= error_tag f, :description %>
-  </div>
-
-  <div class="form-group">
-    <%= label f, :username, class: "control-label" %>
-    <%= text_input f, :username, class: "form-control" %>
+    <%= text_input f, :username, class: "form-control", placeholder: "User Name (ex: RedFive)" %>
     <%= error_tag f, :username %>
   </div>
 
   <div class="form-group">
-    <%= label f, :email, class: "control-label" %>
-    <%= text_input f, :email, class: "form-control" %>
+    <%= text_input f, :email, class: "form-control", placeholder: "Email Address (ex: luke@rebellion.com)" %>
     <%= error_tag f, :email %>
   </div>
 
   <div class="form-group">
-    <%= label f, :password, class: "control-label" %>
-    <%= text_input f, :password, class: "form-control" %>
+    <%= text_input f, :password, class: "form-control", placeholder: "Password" %>
     <%= error_tag f, :password %>
+  </div>
+
+  <div class="form-group">
+    <%= text_input f, :display_name, class: "form-control", placeholder: "Your Name (ex: Luke Skywalker)" %>
+    <%= error_tag f, :display_name %>
+  </div>
+
+  <div class="form-group">
+    <%= textarea f, :description, class: "form-control", placeholder: "Describe yourself! (ex: 'A farmboy from the distant reaches of the galaxy who sometimes talks to space wizards.')" %>
+    <%= error_tag f, :description %>
   </div>
 
   <div class="form-group">

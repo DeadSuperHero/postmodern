@@ -1,18 +1,16 @@
-<div class="user_form col-md-3">
-<h2> Login page </h2>
+<div class="user_form col-md-6">
+<h2> Sign In </h2>
 
 <%= if @maybe_user == nil do %>
   <%= form_for @changeset, @action, fn f -> %>
 
   <div class="form-group">
-  <%= label f, :username, class: "control-label" %>
-  <%= text_input f, :username, class: "form-control" %>
+  <%= text_input f, :username, class: "form-control", placeholder: "username" %>
   <%= error_tag f, :username %>
 </div>
 
 <div class="form-group">
-  <%= label f, :password, class: "control-label" %>
-  <%= password_input f, :password, class: "form-control" %>
+  <%= password_input f, :password, class: "form-control", placeholder: "password" %>
   <%= error_tag f, :password %>
 </div>
 

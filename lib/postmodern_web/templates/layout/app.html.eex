@@ -16,6 +16,7 @@
     <%= render "_navbar.html", conn: @conn %>
 
       <main role="main">
+        <div id="region_body" class="col-md-8">
         <div class="container-fluid">
           <%= unless is_nil(get_flash(@conn, :info)) do %>
             <p class="alert alert-success" role="alert"><%= get_flash(@conn, :info) %></p>
@@ -25,6 +26,7 @@
           <% end %>
         <%= render @view_module, @view_template, assigns %>
       </div>
+    </div>
       </main>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
