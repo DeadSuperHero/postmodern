@@ -31,6 +31,7 @@ defmodule PostmodernWeb.Router do
     post "/sign_in", SessionController, :login
     post "/sign_out", SessionController, :logout
     resources "/articles", ArticleController
+    resources "/profiles", ProfileController
   end
 
   # Definitely logged in scope
