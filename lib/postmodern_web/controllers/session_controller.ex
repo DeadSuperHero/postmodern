@@ -45,8 +45,8 @@ defmodule PostmodernWeb.SessionController do
   end
 
   def secret(conn, _params) do
-    maybe_user = Guardian.Plug.current_resource(conn)
-    render(conn, "secret.html", maybe_user: maybe_user)
+    current_user = Guardian.Plug.current_resource(conn)
+    render(conn, "secret.html", current_user: current_user)
   end
 
 end

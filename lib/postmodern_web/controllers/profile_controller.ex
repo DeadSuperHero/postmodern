@@ -61,12 +61,12 @@ defmodule PostmodernWeb.ProfileController do
 
   defp assign_user(conn, _) do
       %{"user_id" => user_id} = conn.params
-        if user = Repo.get(Postmodern.User, user_id) do
+        if user = Auth.get_user(Postmodern.User, user_id) do
           assign(conn, :user, user)
         else
           conn
           |> put_flash(:error, "Invalid user!")
-          |> redirect(to: page_path(conn, :index))
+          |> redirect(to: user_path(conn, :show))
           |> halt()
     end
   end
