@@ -15,8 +15,13 @@ defmodule PostmodernWeb.Router do
 
   pipeline :auth do
     plug Postmodern.Auth.Pipeline
-    plug Postmodern.CurrentUser
   end
+
+  pipeline :with_session do
+    plug Guardian.Plug.VerifySession
+    plug Guardian.Plug.LoadResource
+    plug Postmodern.CurrentUser
+end
 
   pipeline :ensure_auth do
     plug Guardian.Plug.EnsureAuthenticated

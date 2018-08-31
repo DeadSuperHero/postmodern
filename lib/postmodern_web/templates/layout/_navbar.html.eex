@@ -13,7 +13,12 @@
 
     <div class="dropdown float-right">
     <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      User Menu
+
+    <%#   <%= if @current_user == !nil do %>
+    <%#     <%= @current_user.display_name %>
+    <%#       <% else %>
+    <%#       User Menu
+    <%#       <% end %>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
 

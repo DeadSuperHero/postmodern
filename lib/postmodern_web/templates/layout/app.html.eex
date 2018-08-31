@@ -13,7 +13,11 @@
 
   <body>
 
+  <%#   <%= if @current_user == !nil do %>
+  <%#   <%= render "_navbar.html", conn: @conn, current_user: @current_user %>
+  <%#   <% else %>
     <%= render "_navbar.html", conn: @conn %>
+  <%#   <% end %>
 
       <main role="main">
         <div id="region_body" class="col-md-8">
