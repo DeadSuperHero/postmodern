@@ -1,5 +1,6 @@
 <h2>Edit Profile</h2>
 
-<%= render "form.html", Map.put(assigns, :action, profile_path(@conn, :update, @profile)) %>
+<%= render "form.html", changeset: @changeset,
+                        action: user_profile_path(@conn, :update, @user, @profile) %>
 
-<span><%= link "Back", to: profile_path(@conn, :index) %></span>
+<span><%= link "Back", to: user_profile_path(@conn, :index, @user) %></span>

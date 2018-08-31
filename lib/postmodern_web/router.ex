@@ -25,13 +25,16 @@ defmodule PostmodernWeb.Router do
     pipe_through [:browser, :auth] # Use the default browser stack
 
     get "/", PageController, :index
-    resources "/users", UserController
+
+    resources "/users", UserController do
+        resources "/profiles", ProfileController
+    end
+
     get "/sign_up", UserController, :new
     get "/sign_in", SessionController, :index
     post "/sign_in", SessionController, :login
     post "/sign_out", SessionController, :logout
     resources "/articles", ArticleController
-    resources "/profiles", ProfileController
   end
 
   # Definitely logged in scope

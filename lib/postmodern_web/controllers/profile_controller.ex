@@ -3,23 +3,24 @@ defmodule PostmodernWeb.ProfileController do
 
   alias Postmodern.Accounts
   alias Postmodern.Accounts.Profile
+  plug :assign_user
 
-  def index(conn, _params) do
+  def index(conn, _params, user) do
     profiles = Accounts.list_profiles()
     render(conn, "index.html", profiles: profiles)
   end
 
-  def new(conn, _params) do
+  def new(conn, _params, user) do
     changeset = Accounts.change_profile(%Profile{})
     render(conn, "new.html", changeset: changeset)
   end
 
   def create(conn, %{"profile" => profile_params}) do
     case Accounts.create_profile(profile_params) do
-      {:ok, profile} ->
+      {:ok, _profile} ->
         conn
         |> put_flash(:info, "Profile created successfully.")
-        |> redirect(to: profile_path(conn, :show, profile))
+        |> redirect(to: page_path(conn, :index))
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "new.html", changeset: changeset)
     end
@@ -43,7 +44,7 @@ defmodule PostmodernWeb.ProfileController do
       {:ok, profile} ->
         conn
         |> put_flash(:info, "Profile updated successfully.")
-        |> redirect(to: profile_path(conn, :show, profile))
+        |> redirect(to: user_profile_path(conn, :show, profile))
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "edit.html", profile: profile, changeset: changeset)
     end
@@ -55,6 +56,19 @@ defmodule PostmodernWeb.ProfileController do
 
     conn
     |> put_flash(:info, "Profile deleted successfully.")
-    |> redirect(to: profile_path(conn, :index))
+    |> redirect(to: user_profile_path(conn, :index, :user))
   end
+
+  defp assign_user(conn, _) do
+      %{"user_id" => user_id} = conn.params
+        if user = Repo.get(Postmodern.User, user_id) do
+          assign(conn, :user, user)
+        else
+          conn
+          |> put_flash(:error, "Invalid user!")
+          |> redirect(to: page_path(conn, :index))
+          |> halt()
+    end
+  end
+
 end

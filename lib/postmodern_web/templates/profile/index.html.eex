@@ -1,32 +1,21 @@
 <h2>Listing Profiles</h2>
 
-<table class="table">
-  <thead>
-    <tr>
       <th>Username</th>
       <th>Display name</th>
       <th>Description</th>
       <th>Avatar</th>
 
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
 <%= for profile <- @profiles do %>
-    <tr>
       <td><%= profile.username %></td>
       <td><%= profile.display_name %></td>
       <td><%= profile.description %></td>
       <td><%= profile.avatar %></td>
 
-      <td class="text-right">
-        <span><%= link "Show", to: profile_path(@conn, :show, profile), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Edit", to: profile_path(@conn, :edit, profile), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: profile_path(@conn, :delete, profile), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
-      </td>
-    </tr>
-<% end %>
-  </tbody>
-</table>
+        <span><%= link "Show", to: user_profile_path(@conn, :show, @user, profile), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: user_profile_path(@conn, :edit, @user, profile), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: user_profile_path(@conn, :delete, @user, profile), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
 
-<span><%= link "New Profile", to: profile_path(@conn, :new) %></span>
+
+<% end %>
+
+<span><%= link "New Profile", to: user_profile_path(@conn, :new, @user) %></span>
