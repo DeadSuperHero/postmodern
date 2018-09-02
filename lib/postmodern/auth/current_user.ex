@@ -8,4 +8,9 @@ defmodule Postmodern.CurrentUser do
     current_user = current_resource(conn)
     assign(conn, :current_user, current_user)
   end
+
+  def logged_in?(conn) do
+    Guardian.Plug.authenticated?(conn)
+  end
+
 end

@@ -17,7 +17,7 @@
     <%#   <%= if @current_user == !nil do %>
     <%#     <%= @current_user.display_name %>
     <%#       <% else %>
-    <%#       User Menu
+           User Menu
     <%#       <% end %>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
