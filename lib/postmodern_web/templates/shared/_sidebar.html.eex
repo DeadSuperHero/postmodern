@@ -8,4 +8,6 @@
     </div>
   </nav>
     <p>Articles will eventually appear here</p>
+    <%= render PostmodernWeb.ArticleView, "_stream.html", conn: @conn %>
+
 </div>
