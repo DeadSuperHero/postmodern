@@ -7,7 +7,5 @@
       </div>
     </div>
   </nav>
-  <p>You are logged in, @current_user.name</p>
-
-<%= render PostmodernWeb.SharedView, "_stream.html", assigns %>
+    <p>Articles will eventually appear here</p>
 </div>

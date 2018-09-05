@@ -1,0 +1,12 @@
+  <div class="article_outer">
+    <div class="article_inner">
+        <%= link @article.title, to: article_path(@conn, :show, @article), class: "h5" %>
+        <p><%= @article.body %></p>
+    </div>
+
+    <div class="actions">
+            <%= link "Edit", to: article_path(@conn, :edit, @article), class: "btn btn-default btn-xs" %>
+            <%= link "Delete", to: article_path(@conn, :delete, @article), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+    </div>
+
+  </div>
