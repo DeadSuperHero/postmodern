@@ -1,6 +1,9 @@
 #search {
   padding: 0;
   display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
 #search input.form-control {

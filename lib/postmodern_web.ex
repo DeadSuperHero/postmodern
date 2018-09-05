@@ -40,6 +40,7 @@ defmodule PostmodernWeb do
       import PostmodernWeb.Router.Helpers
       import PostmodernWeb.ErrorHelpers
       import PostmodernWeb.Gettext
+      alias PostmodernWeb.SharedView
     end
   end
 

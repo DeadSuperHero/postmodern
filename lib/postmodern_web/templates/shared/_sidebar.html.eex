@@ -1,0 +1,13 @@
+
+<div id="sidebar" class="sidebar col-md-2">
+  <nav role="navbar navbar-fixed-top">
+    <div id="search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="@Search" aria-describedby="sizing-addon2 place">
+      </div>
+    </div>
+  </nav>
+  <p>You are logged in, @current_user.name</p>
+
+<%= render PostmodernWeb.SharedView, "_stream.html", assigns %>
+</div>

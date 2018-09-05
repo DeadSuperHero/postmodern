@@ -1,4 +1,3 @@
-<script src="tinymce.js"></script>
 <script>
   tinymce.init({
     selector: 'textarea#article_body'

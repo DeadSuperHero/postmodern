@@ -1,12 +1,6 @@
 <header class="header">
   <nav role="navbar navbar-inverse bg-inverse navbar-fixed-top">
 
-<div id="search" class="col-md-2">
-  <div class="input-group">
-    <input type="text" class="form-control" placeholder="@Search" aria-describedby="sizing-addon2 place">
-  </div>
-</div>
-
 <span class="brand">
   <%= link "postModern", to: article_path(@conn, :index), class: "h3" %>
 </span>
