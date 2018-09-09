@@ -15,15 +15,17 @@
     <%#       <% end %>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+      <%= if Guardian.Plug.authenticated?(@conn, []) do %>
 
       <li class="dropdown"><%= link "New Article", to: article_path(@conn, :new), class: "dropdown-item" %></li>
       <li class="divider"></li>
       <li class="dropdown"><%= link "Logout", to: session_path(@conn, :logout), method:
       :post,  class: "dropdown-item"  %></li>
+      <% else %>
 
     <li class="dropdown"><%= link "Sign In", to: session_path(@conn, :index), class: "dropdown-item"  %></li>
       <li class="dropdown"><%= link "Sign Up", to: user_path(@conn, :new), class: "dropdown-item"  %></li>
-
+      <% end %>
     </ul>
   </div>
 
