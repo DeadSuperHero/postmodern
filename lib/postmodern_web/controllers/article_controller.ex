@@ -3,7 +3,7 @@ defmodule PostmodernWeb.ArticleController do
 
   alias Postmodern.Stories
   alias Postmodern.Stories.Article
-  
+
 
   def index(conn, _params) do
     articles = Stories.list_articles()
@@ -28,7 +28,8 @@ defmodule PostmodernWeb.ArticleController do
 
   def show(conn, %{"id" => id}) do
     article = Stories.get_article!(id)
-    render(conn, "show.html", article: article)
+    articles = Stories.list_articles()
+    render(conn, "show.html", article: article, articles: articles)
   end
 
   def edit(conn, %{"id" => id}) do

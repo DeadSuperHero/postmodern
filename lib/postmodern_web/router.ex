@@ -46,7 +46,7 @@ end
   # Definitely logged in scope
   scope "/", PostmodernWeb do
     pipe_through [:browser, :auth, :ensure_auth]
-
+    resources "/dashboard", DashboardController
     get "/secret", SessionController, :secret
   end
 

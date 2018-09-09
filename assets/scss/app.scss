@@ -1,6 +1,7 @@
 /* This file is for your main application css. */
 @import "articles";
 @import "navbar";
+@import "dashboard";
 @import "bootstrap";
 
 
@@ -69,7 +70,6 @@ body {
 }
 
 #region_sidebar {
-  width: 20%;
 -ms-flex: 0 100px;
 -webkit-box-flex:  0;
 -moz-box-flex:  0;

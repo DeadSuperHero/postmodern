@@ -1,4 +1,4 @@
-<div id="article_outer", class="col-md-6">
+<div id="article_outer", class="col-md-10">
 <h2> <%= @article.title %> </h2>
 
 <%= @article.body %>

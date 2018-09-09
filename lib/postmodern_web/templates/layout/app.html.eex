@@ -13,15 +13,16 @@
 
 <div id="zone_wrappers" class="col-md-12">
   <body>
-  <div id="region_sidebar">
-  <%= if Guardian.Plug.authenticated?(@conn, []) do %>
-  <%= render PostmodernWeb.SharedView,"_sidebar.html", conn: @conn %>
-  <% end %>
-  </div>
+     <%= if Guardian.Plug.authenticated?(@conn, []) do %>
+    <div id="region_sidebar" class="col-md-3">
+      <%= render PostmodernWeb.DashboardView, "_sidebar.html", articles: @articles, conn: @conn %>
+    </div>
+    <% end %>
+
       <main role="main"
-        <div id="region_content" class="col-md-10">
+        <div id="region_content" class="col-md-9">
           <%= render PostmodernWeb.SharedView, "_navbar.html", conn: @conn %>
-        <div id="region_body" class="col-md-8">
+        <div id="region_body">
           <div class="container-fluid">
             <%= unless is_nil(get_flash(@conn, :info)) do %>
               <p class="alert alert-success" role="alert"><%= get_flash(@conn, :info) %></p>
@@ -33,6 +34,7 @@
           </div>
         </div>
       </main>
+            <%= assigns[:built_with] %>
     </div>
   </div>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>

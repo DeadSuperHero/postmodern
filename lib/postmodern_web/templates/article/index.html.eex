@@ -1,7 +1,4 @@
 <div id="article_index" class="col-md-8">
   <h2>Listing Articles</h2>
-
-  <%= for article <- @articles do %>
-    <%= render "_stream.html", article: article, conn: @conn %>
-  <% end %>
+    <%= render_many @articles, PostmodernWeb.ArticleView, "_stream.html", conn: @conn %>
 </div>

@@ -1,0 +1,15 @@
+
+  <%=  for article <- @articles do %>
+<div class="listing_outer">
+  <div class="listing_inner">
+      <%= link article.title, to: article_path(@conn, :show, article), class: "article_title" %>
+      <p class="article_description"><%= article.body %></p>
+  </div>
+
+  <div class="actions">
+          <%= link "Edit", to: article_path(@conn, :edit, article), class: "btn btn-default btn-xs" %>
+          <%= link "Delete", to: article_path(@conn, :delete, article), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+  </div>
+
+</div>
+<% end %>
