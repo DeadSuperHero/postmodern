@@ -11,8 +11,9 @@ defmodule PostmodernWeb.ArticleController do
   end
 
   def new(conn, _params) do
+    articles = Stories.list_articles()
     changeset = Stories.change_article(%Article{})
-    render(conn, "new.html", changeset: changeset)
+    render(conn, "new.html", changeset: changeset, articles: articles)
   end
 
   def create(conn, %{"article" => article_params}) do
@@ -34,12 +35,14 @@ defmodule PostmodernWeb.ArticleController do
 
   def edit(conn, %{"id" => id}) do
     article = Stories.get_article!(id)
+    articles = Stories.list_articles()
     changeset = Stories.change_article(article)
-    render(conn, "edit.html", article: article, changeset: changeset)
+    render(conn, "edit.html", article: article, articles: articles, changeset: changeset)
   end
 
   def update(conn, %{"id" => id, "article" => article_params}) do
     article = Stories.get_article!(id)
+    articles = Stories.list_articles()
 
     case Stories.update_article(article, article_params) do
       {:ok, article} ->
