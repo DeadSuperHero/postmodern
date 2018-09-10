@@ -47,6 +47,8 @@ end
   scope "/", PostmodernWeb do
     pipe_through [:browser, :auth, :ensure_auth]
     resources "/dashboard", DashboardController
+    get "/dashboard", DashboardController, :index
+    get "/dashboard/articles", ArticleController, :index
     get "/secret", SessionController, :secret
   end
 

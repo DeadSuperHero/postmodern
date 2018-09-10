@@ -3,6 +3,7 @@ defmodule PostmodernWeb.ArticleController do
 
   alias Postmodern.Stories
   alias Postmodern.Stories.Article
+  plug :assign_user
 
 
   def index(conn, _params) do
@@ -52,6 +53,16 @@ defmodule PostmodernWeb.ArticleController do
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "edit.html", article: article, changeset: changeset)
     end
+  end
+
+  defp assign_user(conn, _opts) do
+    case conn.params do
+      %{"user_id" => user_id} ->
+        user = Repo.get(Postmodern.User, user_id)
+        assign(conn, :user, user)
+        _ ->
+        conn
+      end
   end
 
   def delete(conn, %{"id" => id}) do

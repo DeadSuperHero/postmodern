@@ -15,7 +15,7 @@
       <%= unless Guardian.Plug.authenticated?(@conn, []) do %>
            User Menu
       <% else %>
-          <p>Logged In</p>
+          Logged In
       <% end %>
     <%#       <% end %>
     </button>
@@ -23,6 +23,7 @@
       <%= if Guardian.Plug.authenticated?(@conn, []) do %>
 
       <li class="dropdown"><%= link "New Article", to: article_path(@conn, :new), class: "dropdown-item" %></li>
+      <li class="dropdown"><%= link "User Profiles", to: user_path(@conn, :index), class: "dropdown-item" %></li>
       <li class="divider"></li>
       <li class="dropdown"><%= link "Logout", to: session_path(@conn, :logout), method:
       :post,  class: "dropdown-item"  %></li>

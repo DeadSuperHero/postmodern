@@ -35,7 +35,7 @@ defmodule PostmodernWeb.SessionController do
     |> put_flash(:success, "Welcome back!")
     |> Guardian.Plug.sign_in(user)
     |> put_session(:current_user, %{id: user.id, username: user.username})
-    |> redirect(to: "/dashboard")
+    |> redirect(to: dashboard_path(conn, :index))
   end
 
   def logout(conn, _) do
