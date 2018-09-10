@@ -2,7 +2,7 @@
   <nav role="navbar navbar-inverse bg-inverse navbar-fixed-top">
 
 <span class="brand">
-  <%= link "postModern", to: article_path(@conn, :index), class: "h3" %>
+  <%= link "postModern", to: dashboard_path(@conn, :index), class: "h3" %>
 </span>
 
     <div class="dropdown float-right">
@@ -11,7 +11,12 @@
     <%#   <%= if @current_user == !nil do %>
     <%#     <%= @current_user.display_name %>
     <%#       <% else %>
+
+      <%= unless Guardian.Plug.authenticated?(@conn, []) do %>
            User Menu
+      <% else %>
+          <p>Logged In</p>
+      <% end %>
     <%#       <% end %>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">

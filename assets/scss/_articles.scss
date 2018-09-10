@@ -17,3 +17,12 @@
   display: inline-block;
   vertical-align: top;
 }
+
+input#article_title.form-control {
+  border: none;
+  font-size: 2em;
+  line-height: 2em;
+  align-content: left;
+  padding: 0;
+  margin: 0;
+}

@@ -4,8 +4,11 @@ defmodule PostmodernWeb.PageController do
   alias Postmodern.Auth
   alias Postmodern.Auth.User
   alias Postmodern.Auth.Guardian
+  alias Postmodern.Stories
+  alias Postmodern.Stories.Article
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    articles = Stories.list_articles()
+    render(conn, "index.html", articles: articles)
   end
 end

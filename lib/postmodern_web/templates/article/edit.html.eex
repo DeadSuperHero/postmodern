@@ -1,12 +1,10 @@
 <script>
-  tinymce.init({
+  tinyMCE.init({
     selector: 'textarea#article_body'
   });
 </script>
 
-<div id="article_outer", class="col-md-6">
-  <h2>Edit Article</h2>
-
+<div id="article_outer">
   <%= render "form.html", Map.put(assigns, :action, article_path(@conn, :update, @article)) %>
 
   <span><%= link "Back", to: article_path(@conn, :index) %></span>

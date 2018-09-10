@@ -99,3 +99,16 @@ box-flex:  0;
  -ms-box-orient: horizontal;
  box-orient: horizontal;
 }
+
+#features {
+  text-align: center;
+}
+
+.feature {
+  text-align: left;
+  display: inline-block;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 2%;
+}

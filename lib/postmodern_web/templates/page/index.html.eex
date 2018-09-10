@@ -1,1 +1,30 @@
-<h1> Under construction </h1>
+
+
+<div id="features" class="container-fluid">
+
+  <div class="jumbotron">
+    <h1>Welcome to postModern! </h1>
+    <p>postModern is a federated publishing platform, designed both for people who
+      like to write and people who love to read.</p>
+  </div>
+
+  <div class="feature col-md-3">
+    <h2>Powered by ActivityPub</h2>
+    <p>postModern uses the ActivityPub federation protocol to
+      connect with the fediverse, an ad-hoc supernetwork of user-run instances.
+<p>
+  </div>
+
+  <div class="feature col-md-3">
+    <h2>A Dashboard for Writing</h2>
+    <p>Leveraging tinyMCE, postModern is designed from the ground up to provide
+      a simple, coherent experience that focuses on content.</p>
+    <p><p>
+  </div>
+
+  <div class="feature col-md-3">
+    <h2>A Dashboard for Reading</h2>
+    <p>Subscribe to your favorite blogs and publications that have ActivityPub
+      enabled, read and like articles and post responses from the dash.</p>
+  </div>
+</div>

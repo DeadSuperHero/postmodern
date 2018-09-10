@@ -22,7 +22,7 @@
       <main role="main"
         <div id="region_content" class="col-md-9">
           <%= render PostmodernWeb.SharedView, "_navbar.html", conn: @conn %>
-        <div id="region_body">
+        <div id="region_body" >
           <div class="container-fluid">
             <%= unless is_nil(get_flash(@conn, :info)) do %>
               <p class="alert alert-success" role="alert"><%= get_flash(@conn, :info) %></p>
