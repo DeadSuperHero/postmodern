@@ -3,15 +3,19 @@ defmodule PostmodernWeb.UserController do
 
   alias Postmodern.Auth
   alias Postmodern.Auth.User
+  alias Postmodern.Stories
+  alias Postmodern.Stories.Article
 
   def index(conn, _params) do
+    articles = Stories.list_articles()
     users = Auth.list_users()
-    render(conn, "index.html", users: users)
+    render(conn, "index.html", users: users, articles: articles)
   end
 
   def new(conn, _params) do
+    articles = Stories.list_articles()
     changeset = Auth.change_user(%User{})
-    render(conn, "new.html", changeset: changeset)
+    render(conn, "new.html", changeset: changeset, articles: articles)
   end
 
   def create(conn, %{"user" => user_params}) do
@@ -26,14 +30,16 @@ defmodule PostmodernWeb.UserController do
   end
 
   def show(conn, %{"id" => id}) do
+    articles = Stories.list_articles()
     user = Auth.get_user!(id)
-    render(conn, "show.html", user: user)
+    render(conn, "show.html", user: user, articles: articles)
   end
 
   def edit(conn, %{"id" => id}) do
+    articles = Stories.list_articles()
     user = Auth.get_user!(id)
     changeset = Auth.change_user(user)
-    render(conn, "edit.html", user: user, changeset: changeset)
+    render(conn, "edit.html", user: user, changeset: changeset, articles: articles)
   end
 
   def update(conn, %{"id" => id, "user" => user_params}) do
